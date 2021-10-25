@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mukta', sans-serif;
+}
+body{
+  background-image: url('./assets/legumes-e-verduras.jpg');
+  background-size: 100%; 
+}
+a{
+  text-decoration: underline;
+  color: #000;
+}
+a:hover{
+  text-decoration: underline;
+  color: rgb(2, 66, 50);
+}
+section{
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: center;
+  text-align: center;
+}
+.calculadora-central, .teste{
+  width: 25%;
+  height: 490px;
+  border-radius: 15px;
+  border: thick  groove  rgb(122, 121, 121);
+  background-color: rgba(4, 160, 121, .3);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.imc{
+  width: 23%;
+  height: 220px;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 10px;
+  border: thick  groove  rgb(122, 121, 121);
+  background-color: rgba(36, 136, 136, 0.6);
+  line-height: 32px;
+  border-radius: 25px;
+}
+
+label{
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 1px;
+  line-height: 50px;
+}
+input{
+  all: unset;
+  box-sizing: border-box;
+  border:1px solid rgb(118, 119, 119);
+  background-color:rgba(68, 69, 70, 0.3) ;
+  border-radius: 10px;
+  width: 20%;
+  height: 35px;
+  box-shadow: 0px 0px 10px black;
+}
+.name{
+  width: 200px;
+  height: 35px;
+}
+input:focus{
+  background-color: white;
+}
+.resultado{
+  width: 250px;
+  height: 120px;
+  border:1px solid rgb(118, 119, 119);
+  background-color:rgba(68, 69, 70, 0.3) ;
+  border-radius: 10px;
+  align-items: center;
+  margin-left: 40px;
+  margin-top: 10px;
+  display: flex;
+  padding: 20px;
+  user-select: none;
+  box-shadow: 0px 0px 10px black;
+  font-weight: 700;
+}
+button {
+  margin-top: 20px;
+  box-shadow: 0px 0px 10px black;
+  border: none;
+  width: 170px;
+  height: 60px;
+  color: #000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgb(34, 33, 33, 0.5);
+  text-align: center;
+}
+button:hover {
+  background: rgba(15, 15, 15, 0.5),;
+  box-shadow:  4px 4px 2px 0 rgba(15, 15, 15, 0.5),
+              -4px -4px 2px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 2px 0 rgba(15, 15, 15, 0.5),
+    inset 4px 4px 2px 0 rgba(116, 125, 136, .3);
+  color: rgba(15, 15, 15, 0.5),;
+}
+button:hover:after {
+  -webkit-transform: scale(2) rotate(180deg);
+  transform: scale(2) rotate(180deg);
+  box-shadow:  4px 4px 2px 0 rgba(15, 15, 15, 0.5),
+              2px 2px 2px 0 rgba(116, 125, 136, .2), 
+    inset 2px 2px 2px 0 rgba(53, 52, 52, 0.5),
+    inset 4px 4px 2px 0 rgba(116, 125, 136, .3);
+}
+.table{
+  width: 22%;
+  height: 360px;
+  text-align: center;
+  border: thick  groove  rgb(122, 121, 121);
+  background-color: rgba(36, 136, 136, 0.6);
+  border-radius: 15px;
+
+}
+
+table, th, td{
+  border:rgb(118, 119, 119);
+  background-color: rgba(4, 160, 121, .3);
+  background: transparent;
+  line-height: 32px;
+  border-radius: 50px;
+  border-spacing: 7px;
+}
+th,td{
+  padding: 5px 7px;
+}
+th{
+  background-color: rgba(5, 121, 82, 0.5);
+  color: black;
+  border: 1px solid black;
+}
+
+table tr:nth-child(odd){
+  background-color: rgba(10, 77, 77, 0.8);
+}
+
+table tr:nth-child(even){
+  background-color: rgba(156, 152, 153, 0.8);
+}
+
+.copy{
+background-color: rgba(4, 160, 121, .3);
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.direitos{
+  font-style: italic;
+  font-size: 15px;
+}
+.midias-sociais{
+  width: 17%;
+}
+.midias-sociais a{
+  padding-left: 15px;
+}
